@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt">
+<!-- Site de referência: https://www.fabbrichetta.pt/ -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- RECURSOS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="fonts/css/all.css">
+    <!-- Mystyle -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho - Menu icon, log icon, tel e cart -->
+    <header class="d-flex flex-row">
+        <div class="col-lg-2 col-sm-2 flex-column">
+            <i class="fa-solid fa-bars" id="menu"></i>
+        </div>
+        <div class="col-lg-6 col-sm-2 flex-column"></div>
+        <div class="col-lg-4 col-sm-8 flex-column flex-end">
+            <div class="d-flex flex-row">
+            <div class="d-flex flex-column col-lg-8 col-sm-2 align-items-center justify-content-center">
+                    <div class="contacto">T.210210210<br><small>Faça a sua Reserva</small></div>
+                    <div class="d-flex flex-column col-lg-4 col-sm-10 align-items-center justify-content-center carrinho">
+                        <i class="fa-solid fa-cart-shopping">0 itens</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="logotype"><i class="fa-solid fa-pizza-slice"></i></div>
+    <!-- End Cabeçalho -->
+    <!-- Menu -->
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Encomendar</a></li>
+            <li><a href="#">Menus</a></li>
+            <li><a href="#">Escola Pizzaiolos</a></li>
+            <li><a href="#">Workshop de Pizzas</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+    </nav>
+    <!-- End Menu -->
+    <!-- Banner -->
+    <div class="banner">
+        <h2>Conheça o nosso menu de almoço</h2>
+    </div>
+    <!-- End Banner -->
+    <!-- Slider -->
+    <div class="banner_slider">
+        <div class="slider">
+            <img id="img-1" src="imagens/banner1.png" alt="img1">
+            <img id="img-2" src="imagens/banner2.png" alt="img2">
+            <img id="img-3" src="imagens/banner1.png" alt="img3">
+            <img id="img-4" src="imagens/banner2.png" alt="img4">
+        </div>
+        <div class="navigation-button">
+            <span class="dot activate" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
+        </div>
+    </div>
+    <!-- Close Slider -->
+    <section class="locais">
+        <div class="d-flex flex-row">
+            <div class="flex-column col-4 text-center">
+                <button>Em casa</button>
+                <p>Vamos até ti!</p>
+            </div>
+            <div class="flex-column col-4 text-center">
+                <img src="imagens/button-circle-gradient-ovxxd5gtmkrygqxe5lvcnc6ep8ld94q0cgipi3lee8.png">
+            </div>
+            <div class="flex-column col-4 text-center">
+                <button>Até nós</button>
+                <p>Vem até nós!</p>
+            </div>
+        </div>
+    </section>
+    <!-- Sugestões -->
+    <section id="sugestoes">
+        <h3>Sugestões do Chef</h3>
+        <div class="flex-grid d-flex">
+            <div class="col-lg-3 col-sm-6">
+                <div class="prato">
+                    <a href="loja.html"><img src="https://www.fabbrichetta.pt/wp-content/uploads/2022/04/pasta-bolonhesa-large.png"></a>
+                    <h4>Pasta Bolonhesa</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="prato">
+                    <a href="loja.html"><img src="https://www.fabbrichetta.pt/wp-content/uploads/2022/04/lasanha-large.png"></a>
+                    <h4>Lasanha</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="prato">
+                    <a href="loja.html"><img src="https://www.fabbrichetta.pt/wp-content/uploads/2022/04/risotto-funghi-large-1.png"></a>
+                    <h4>Risotto di Funghi</h4>
+                </div>
+            </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="prato">
+                    <a href="loja.html"><img src="https://www.fabbrichetta.pt/wp-content/uploads/2023/08/fabbrichetta-nero-camarao.png"></a>
+                    <h4>Nero de Camarão</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Sugestões -->
+    <!-- Novidades -->
+    <section id="novidades">
+        <h3>Novidades</h3>
+        <div class="flex-grid d-flex">
+            <div class="col-lg-3 col-sm-6">
+                <div class="prato">
+                    <a href="loja.html"><img src="https://www.fabbrichetta.pt/wp-content/uploads/2023/08/fabbrichetta-gnocchi.png"></a>
+                    <h4>Gnochi</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="prato">
+                    <a href="loja.html"><img src="https://www.fabbrichetta.pt/wp-content/uploads/2023/08/fabbrichetta-salmao.png"></a>
+                    <h4>Salmão</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="prato">
+                    <a href="loja.html"><img src="https://www.fabbrichetta.pt/wp-content/uploads/2023/08/fabbrichetta-sorrentino.png"></a>
+                    <h4>Sorrentino</h4>
+                </div>
+            </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="prato">
+                    <a href="loja.html"><img src="https://www.fabbrichetta.pt/wp-content/uploads/2023/08/fabbrichetta-ravioli.png"></a>
+                    <h4>Ravioli</h4>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Porquê -->
+        <section id="porque">
+            <h4>PORQUÊ ENCOMENDAR CONNOSCO?</h4>
+            <p>Esta é a resposta mais fácil do mundo! As iguarias italianas da Fabbrichetta (pizzas, risottos, pastas, lasanha, etc), são, de facto, deliciosas. Este é o ponto de partida! Quer recebas a iguaria em tua casa quer a levantes no nosso restaurante, o resultado é sempre o mesmo: uma ótima refeição com uma enorme explosão de sabores! Produtos italianos da melhor qualidade que há, massa confecionada usando as melhores práticas deste país e o gosto pela arte da pizzaria e cozinha italiana são os ingredientes que te tornarão nosso cliente para sempre. A Fabbrichetta é, sem dúvida, o teu restaurante italiano!</p>
+            <p>Caso queiras experimentar os nossos pratos acabadinhos de serem confecionados, podes vir ao nosso espaço/restaurante que te vai transportar para um cantinho algures em Itália! Uma experiência de imersão na cultura gastronómica italiana!</p>
+            <a href="loja.html"><button>Encomendar</button></a>
+        </section>
+        <!-- End Porquê -->
+        <!-- Newsletter -->
+        <!-- End Newsletter -->
+        <section id="newsletter">
+            <div class="d-flex flex-wrap">
+                <div class="col-lg-6 col-sm-12">
+                    <h4>Fale connosco</h4>
+                    <h4 class="tel">210 210 210</h4>
+                    <small>Chamada para a rede fixa nacional</small>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <form method="post">
+                        <h4>Receba a nossa Newsletter</h4>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <button type="submit">Newsletter</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Rodapé -->
+        <footer>
+            <div class="d-flex flex-wrap">
+                <div class="col-lg-8 col-sm-12 text-center">
+                    <ul>
+                        <li><a href="#">Termos e Confições</a></li>
+                        <li><a href="#">Politica Privacidade</a></li>
+                        <li><a href="#">Livro de Reclamações</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-12 text-center">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-sm-12 text-center">
+                    <small>&copy; 2024 PI0923 &reg;Atec</small>
+                </div>
+            </div>
+        </footer>
+        <!-- End Rodapé -->
+        <!-- jQuery -->
+    <script>
+        $(document).ready(function(){
+            $("nav").hide();
+            $("#menu").click(function() {
+            let nav = $("nav");
+            if (nav.is(":visible")){
+                nav.hide({direction:"top"}, 100);
+            } else{
+                nav.show({direction:"bottom"}, 100);
+            }
+        });
+        });
+    </script>
+    <!-- End jQuery -->
+    <script>
+        var imgs = document.querySelectorAll('.slider img');
+        var dots = document.querySelectorAll('.dot');
+        var currentImg = 0; // primeira img selecionada
+        const interval = 10000; //duração do slide milisegundos
+        //mudar de img nos dots
+        function changeSlide(n){
+            for(var i = 0; i < imgs.length; i++){
+                imgs[i].style.opacity = 0;
+                if(dots[i] != null){
+                    dots[i].className = dots[i].className.replace(' active', '');
+                }
+            }
+            var timer = setInterval(changeSlide, interval);
+            currentImg = (currentImg + 1) % imgs.length;  // atualizar o nmr index
+   
+            if(n != undefined) {
+                clearInterval(timer);
+                timer = setInterval(changeSlide, interval);
+                currentImg = n;
+            }
+            imgs[currentImg].style.opacity = 1;
+            dots[currentImg].className += ' active';
+        }
+    </script>
+</body>
+</html>

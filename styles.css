@@ -1,0 +1,267 @@
+:root{
+	--mainred: red;
+	--mainwhite: white;
+	--darkred: darkred;
+}
+/* Header */
+header, header a{
+	background-color: var(--mainred);
+	padding: 2%;
+	color: var(--mainwhite);
+}
+header .fa-bars{font-size:2rem;} /*tamanho do hamburguer*/
+header .fa-bars:hover{cursor: pointer;} /*pointer ao passar o rato no hamburguer*/
+.contacto{
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+.contacto small{
+	font-size: 0.8rem;
+	font-weight: normal;
+}
+.carrinho{
+	border-style: solid;
+	border-width: thin;
+	border-radius: 12px;
+	border-color: var(--mainwhite);
+	padding: 1%;
+}
+.carrinho:hover{
+	border-color: var(--darkred);
+	cursor: pointer;
+	color: var(--darkred);
+}
+/* End Header */
+/* Logotype */
+.logotype{
+	background-color: var(--mainred);
+	color: var(--mainwhite);
+	font-size: 4rem;
+	text-align: center;
+	position: absolute;
+	width: 30%;
+	top: 1%;
+	left: 35%;
+	margin: auto;
+}
+/* End Logotype */
+/* Nav */
+nav{
+	text-align: center;
+	background-color: var(--mainred);
+	position: absolute;
+	top: 17%;
+	left: 0%;
+	z-index: 1;
+	width: 100%;
+}
+nav ul li{
+	display: inline;
+	margin: 2%;
+	& a{
+		color: var(--mainwhite);
+		text-decoration: none;
+	}
+	& a:hover{
+		color: var(--mainwhite);
+		background-color: var(--darkred);
+		text-decoration: none;
+		padding: 0.2%
+	}
+}
+/* End Nav */
+/* Banner */
+.banner{
+	background-image: url(imagens/img1.jpg);
+	background-size: cover;
+	min-height: 80vh;
+	background-position: center;
+	text-align: center;
+}
+.banner h2{
+	padding-top: 15%;
+	color: var(--mainwhite);
+	font-size: 3rem;
+}
+/* End Banner */
+/* Slider */
+.slider{
+	width: 100%;
+	height: 300px;
+	position: relative;
+}
+.slider img{
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.slider img:first-child{
+	z-index: 1;
+}
+.slider img:nth-child(2){
+	z-index: 0;
+}
+.banner_slider{
+	width: 80%;
+	margin: auto;
+	margin-top: 1%;
+}
+/* Bullets */
+.navigation-button{
+	text-align: center;
+	position: relative;
+}
+.dot{
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+.activate, .dot:hover{
+	background-color: #717171;
+}
+/* End Bullets */
+/* End Slider */
+/*  */
+@media (max-width: 576px) {
+	.contacto{
+		visibility: hidden;
+	}
+	.carrinho{
+		font-size: 0.7rem;
+	}
+	.logotype{
+		top: 0%;
+		font-size: 2.5rem;
+	}
+	nav{
+		top: 9%;
+	}
+	nav ul li{
+		display: block;
+		margin: 1%;
+	}
+}
+/* Section */
+	.locais button{
+		background-image: url("imagens/fabbrichetta-gradient-button-store300x300.png");
+		background-position: center;
+		color: #fff;
+		transition: background .3s;
+		background-repeat: no-repeat;
+		text-align: center;
+		padding: 2%;
+		padding-left: 10%;
+		padding-right: 10%;
+		border-style: hidden;
+		border-radius: 10rem;
+	}
+	.locais button:hover{
+		background-image: url(https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRM0OQsITDDUQ-PCjobiXAyUfEQn1sOAkjorPKB2miR-sYx_aCjqMSevH2Y4WjIvPoA);
+		color: #BDA58D;
+		box-sizing: border-box;
+		border-style: solid;
+		border-color: var(--mainred);
+		border-radius: 10rem;
+	}
+/* End Section */
+/* Sugestões e Novidades */
+#sugestoes, #novidades{
+	width: 80%;
+	margin: 2% auto;
+	text-align: center;
+}
+#sugestoes h3, #novidades h3{
+	background-color: var(--mainred);
+	color: var(--mainwhite);
+	padding: 1%;
+	border-radius: 12px;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 1%;
+}
+.prato:hover{
+	border-style: solid;
+	border-width: thin;
+	border-color: var(--mainred);
+	border-radius: 12px;
+}
+.prato img{
+	width: 100%;
+	height: auto;
+}
+.prato h4{
+	color: var(--mainred);
+}
+/* End Sugestões e Novidades */
+/* Porquê */
+#porque{
+	width: 80%;
+	margin: 5% auto;
+}
+#porque h4{
+	color: var(--mainred);
+}
+#porque button{
+	background-color: var(--mainred);
+	color: var(--mainwhite);
+	border: 0;
+	border-radius: 12px;
+	padding: 0.5% 3%;
+}
+#porque button:hover{
+	cursor: pointer;
+	background-color: var(--darkred);
+}
+/* End Porquê */
+/* Newsletter */
+#newsletter{
+	width: 80%;
+	margin: 2% auto;
+	text-align: center;
+}
+#newsletter h4{
+	color: var(--mainred);
+	font-variant-caps: all-small-caps;
+}
+#newsletter .tel{
+	color: #000000;
+}
+#newsletter input{
+	border-color: var(--mainred);
+}
+#newsletter button{
+	border: none;
+	background-color: var(--mainred);
+	color: var(--mainwhite);
+	border-radius: 12px;
+	padding: 0.5% 3%;
+}
+#newsletter button:hover{
+	cursor: pointer;
+	background-color: var(--darkred);
+}
+/* End Newsletter */
+/* Footer */
+footer{
+	background-color: var(--mainred);
+	padding: 3% 10%;
+	color: var(--mainwhite);
+}
+footer a{
+	color: var(--mainwhite);
+	text-decoration: none;
+}
+footer ul li{
+	display: inline-block;
+	margin-right: 3%;
+}
+footer ul li i{
+	font-size: 2rem;
+}
+/* End Footer */
